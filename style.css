@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.descript {
+    margin-top: 2em;
+}
+
+
+
+/* top Text */
+
+.topText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.headText {
+    display: block;
+    text-align: center;
+}
+
+/* Form For Password */
+
+.formPassword {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    width: 800px;
+    margin: 0 auto 15px;
+}
+
+.formCustom {
+    display: block;
+    width: 800px;
+    border: none;
+    height: 100px;
+}
+
+/* Configure Password */
+
+.configureFormPass {
+    margin: 0 auto;
+    width: 770px;
+    height: 355px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5)
+
+}
+
+.configurePass {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.descTop {
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+
+.configCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.formNumberCustom {
+    width: 40px;
+    height: 40px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
