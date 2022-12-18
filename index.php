@@ -9,7 +9,8 @@
     <title>passGener</title>
 </head>
 
-<body>
+<body onload="generate()">
+
 <div class="container">  
     <!-- top Text -->
     <section class="topText">
@@ -23,7 +24,7 @@
     <section class="formPassword">
         <div class="formPass">
             <form>
-                <input type="text" id="passwordGenerator" class="formCustom">
+                <input id="password" class="formCustom" />
             </form>
         </div>
     </section>
@@ -55,13 +56,11 @@
             <!-- </div> -->
             <div class="configRight">
                 <form>
-                    <!-- <input type="checkbox" id="configTopRegistr">
-                    <label for="configTopRegistr">Верхний регистр</label><br /> -->
-                    <input type="checkbox" id="configBotRegistr" checked>
-                    <label for="configBotRegistr">Нижний регистр</label><br />
-                    <input type="checkbox" id="configNumbers">
+                    <input type="checkbox" onchange="generate()" id="configTopRegistr">
+                    <label for="configTopRegistr">Верхний регистр</label><br />
+                    <input type="checkbox" onchange="generate()" id="configNumbers">
                     <label for="configNumbers">Цифры</label><br />
-                    <input type="checkbox" id="configSymbols">
+                    <input type="checkbox" onchange="generate()" id="configSymbols">
                     <label for="configSymbols">Символы</label>
                 </form>
             </div> 

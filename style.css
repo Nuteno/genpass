@@ -45,11 +45,15 @@ body {
 }
 
 .formCustom {
-    display: block;
+    display: flex;
     width: 800px;
     border: none;
     height: 100px;
+    font-size: 45px;
+    text-align: center;
+    cursor: pointer;
 }
+
 
 /* Configure Password */
 
