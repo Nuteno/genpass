@@ -11,50 +11,38 @@
 
 <body onload="generate()">
 
-<div class="container">  
+<section class="generator">  
     <!-- top Text -->
-    <section class="topText">
-        <div class="headText"></div>
+    <section class="generator__header">
+        <div class="generator__header-text"></div>
             <h1>Генератор безопасных паролей</h1>
-            <p class="descript">Используйте этот онлайн генератор паролей, что бы мгновенно создать безопасный случайный
-                пароль.</p>
+            <p class="generator__header-textDescription">Используйте этот онлайн генератор паролей, что бы мгновенно создать безопасный случайный пароль.</p>
         </div>
     </section>
     <!-- Form for Password -->
-    <section class="formPassword">
-        <div class="formPass">
+    <section class="generator__form">
+        <div class="generator__form-item">
             <form>
-                <input id="password" class="formCustom" />
+                <input id="password" class="generator__form-inputDecorated" />
             </form>
         </div>
     </section>
     <!-- Configure Password -->
-    <section class="configureFormPass">
-        <div class="descTop">
+    <section class="generator__settings">
+        <div class="generator__settings-text">
             <h2>Настройте свой пароль</h2>
         </div>
-        <div class="configurePass">
-            <div class="configLeft">
+        <div class="generator__settings__configs">
+            <div class="generator__settings__configs-left">
                 <form>
-                    <div class="rangeBar">
+                    <div class="generator__settings__configs-rangeBar">
                         <input type="number" id="widthPassword" min="4" max="24" value="4" />
                         <input type="range" id="rangePassword" min="4" max="24" value="4" />
                     </div>
                 </form>
             </div>
         </div>
-    
-            <!-- <div class="configCenter"> -->
-                <!-- <form>
-                    <input type="radio" id="passEasy">
-                    <label for="passEasy">Легко сказать</label><br />
-                    <input type="radio" id="passEasyRead">
-                    <label for="passEasyRead">Легко читается</label><br />
-                    <input type="radio" id="passAllSymbols">
-                    <label for="passAllSymbols">Все символы</label>
-                </form> -->
-            <!-- </div> -->
-            <div class="configRight">
+            <div class="generator__settings__configs-right">
                 <form>
                     <input type="checkbox" onchange="generate()" id="configTopRegistr">
                     <label for="configTopRegistr">Верхний регистр</label><br />
@@ -67,7 +55,6 @@
         </div>
     </section>
 </section>
-</div>
 <script src="script.js"></script>
 </body>
 

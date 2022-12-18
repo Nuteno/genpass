@@ -1,4 +1,4 @@
-var dom = {
+const dom = {
     password: document.getElementById('password'),
     passwordSettings: {
         passLengthUser: document.getElementById("widthPassword"),
@@ -14,7 +14,7 @@ var dom = {
     }
 };
 
-var data = {
+const data = {
     letters: {
         up: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
         down: 'abcdefghijklmnopqrstuvwxyz'
@@ -45,19 +45,19 @@ dom.passwordSettings.passLengthCarousel.addEventListener('input', function() {
 // generator random number
 
 function randomNumberGenerator(maxNumber) {
-    var randomNumber = Math.floor(Math.random() * maxNumber);
+    const randomNumber = Math.floor(Math.random() * maxNumber);
     return randomNumber;
 }
 
 // Generator
 
 function passwordGenerator(symbols, passwordLength){
-   var maxIdx = symbols.length - 1;
-   var password = '';
+   const maxIdx = symbols.length - 1;
+   let password = '';
 
-   for (var i = 0; i < passwordLength; i++) {
-        var idx = randomNumberGenerator(maxIdx);
-        var randomLetter = symbols[idx];
+   for (let i = 0; i < passwordLength; i++) {
+        const idx = randomNumberGenerator(maxIdx);
+        const randomLetter = symbols[idx];
         password = password + randomLetter;
     }
    return password;
@@ -65,7 +65,7 @@ function passwordGenerator(symbols, passwordLength){
 
 // Settings Password
 function generate() {
-    var string = data.letters.down;
+    let string = data.letters.down;
     
     if (dom.checkbox.uppercase.checked) {
         string = string + data.letters.up;
@@ -76,7 +76,7 @@ function generate() {
     if (dom.checkbox.symbols.checked) {
         string = string + data.symbols;
     }
-    var pas = passwordGenerator(string, passwordLength);
+    const pas = passwordGenerator(string, passwordLength);
     dom.password.value = pas;
 }
 

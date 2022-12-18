@@ -8,35 +8,28 @@ body {
     background-color: rgb(245, 245, 245);
 }
 
-.container {
+.generator {
     height: 100%;
     width: 100%;
 }
 
-.descript {
+.generator__header-textDescription {
     margin-top: 2em;
 }
 
-
-
-/* top Text */
-
-.topText {
+.generator__header {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
 
-.headText {
+.generator__header-text {
     display: block;
     text-align: center;
 }
 
-/* Form For Password */
-
-.formPassword {
+.generator__form {
     display: flex;
     justify-content: center;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
@@ -44,7 +37,7 @@ body {
     margin: 0 auto 15px;
 }
 
-.formCustom {
+.generator__form-inputDecorated {
     display: flex;
     width: 800px;
     border: none;
@@ -54,10 +47,7 @@ body {
     cursor: pointer;
 }
 
-
-/* Configure Password */
-
-.configureFormPass {
+.generator__settings {
     margin: 0 auto;
     width: 770px;
     height: 355px;
@@ -67,24 +57,12 @@ body {
 
 }
 
-.configurePass {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.descTop {
+.generator__settings-text {
     border-bottom: 1px solid black;
     margin-bottom: 30px;
 }
 
-.configCenter {
-    display: flex;
-    justify-content: center;
-}
-
-.formNumberCustom {
-    width: 40px;
-    height: 40px;
-    border: 1px solid lightgray;
-    border-radius: 8px;
+.generator__settings-configs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
